@@ -1,0 +1,89 @@
+*{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 1fr 9fr; 
+    height: 100vh;
+}
+
+header {
+    grid-row: 1; 
+    background-color: #2D4059;
+    box-shadow: 0px 3px 4px gray ;
+    z-index: 1;
+    height: 69px;
+}
+
+#content {
+    grid-row: 2; 
+    background-color: #E5E5E5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+    gap: 10px;
+    height: 100%;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    height: 100%;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    background-color: #EA5455;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.4s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    background-color: #a72d2d;
+}
+
+/*COD PENTRU MENU*/
+.product-card {
+    width: 40%;
+    background-color: #DECDC3;
+    border-radius: 20px;
+    padding: 20px 15px;
+    box-shadow: 0px 3px 4px gray;
+    transition: background-color 0.4s ease;
+    cursor: pointer;
+
+}
+
+.product-card:hover{
+    background-color: #fedfcd;
+}
+
+.name {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.ingredients {
+    font-style: italic;
+    padding: 2px 0px 5px 10px;
+}
+
+.price{
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+    text-align: end;
+    
+}
+
